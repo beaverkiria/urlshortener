@@ -10,7 +10,7 @@ import (
 
 const shortenUrlLength = 10
 const shortenUrlCharset = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`
-const siteName = "localhost:8080"
+const siteName = "http://localhost:8080"
 
 func ShortenLink(writer http.ResponseWriter, request *http.Request) {
 	body, err := io.ReadAll(request.Body)
